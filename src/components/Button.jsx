@@ -1,19 +1,19 @@
-function Button({ label, onClick, color = '#0284c7' }) {
+import React from 'react';
+
+const Button = ({ text, onClick, style }) => {
   return (
     <button 
       onClick={onClick} 
-      style={{
-        padding: '10px 18px',
-        border: 'none',
-        borderRadius: '6px',
+      style={{ 
+        padding: '4px 8px', 
+        fontSize: '0.8rem', 
         cursor: 'pointer',
-        fontWeight: 'bold',
-        marginRight: '10px'
+        ...style 
       }}
     >
-      {label}
+      {text}
     </button>
   );
-}
+};
 
 export default Button;

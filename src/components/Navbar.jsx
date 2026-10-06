@@ -1,9 +1,7 @@
-function Navbar() {
-  return (
-    <nav style={{ backgroundColor: '#1e293b', color: '#fff', padding: '15px 20px' }}>
-      <h1 style={{ margin: 0, fontSize: '20px' }}>My Website</h1>
-    </nav>
-  );
-}
+import React from 'react';
+
+const Navbar = () => {
+  return null; // Bisa disesuaikan jika ingin menambahkan menu navigasi
+};
 
 export default Navbar;
